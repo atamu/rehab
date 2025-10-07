@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" fill="none">
+  <defs>
+    <style>
+      .stroke-main { stroke: #C8B28A; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    </style>
+  </defs>
+  <g opacity="0.55" class="stroke-main" stroke-width="1.2">
+    <path d="M0 20H1200" />
+    <path d="M0 32H1200" />
+  </g>
+  <g opacity="0.45" class="stroke-main" stroke-width="1.8">
+    <path d="M0 56 L40 24 L80 56 L120 24 L160 56 L200 24 L240 56 L280 24 L320 56 L360 24 L400 56 L440 24 L480 56 L520 24 L560 56 L600 24 L640 56 L680 24 L720 56 L760 24 L800 56 L840 24 L880 56 L920 24 L960 56 L1000 24 L1040 56 L1080 24 L1120 56 L1160 24 L1200 56" />
+    <path d="M0 44 L40 12 L80 44 L120 12 L160 44 L200 12 L240 44 L280 12 L320 44 L360 12 L400 44 L440 12 L480 44 L520 12 L560 44 L600 12 L640 44 L680 12 L720 44 L760 12 L800 44 L840 12 L880 44 L920 12 L960 44 L1000 12 L1040 44 L1080 12 L1120 44 L1160 12 L1200 44" opacity="0.6" />
+  </g>
+  <g stroke="#D66C5B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.35">
+    <path d="M0 40 L40 20 L80 40 L120 20 L160 40 L200 20 L240 40 L280 20 L320 40 L360 20 L400 40 L440 20 L480 40 L520 20 L560 40 L600 20 L640 40 L680 20 L720 40 L760 20 L800 40 L840 20 L880 40 L920 20 L960 40 L1000 20 L1040 40 L1080 20 L1120 40 L1160 20 L1200 40" />
+  </g>
+  <g opacity="0.5" class="stroke-main" stroke-width="1">
+    <path d="M0 68H1200" />
+    <path d="M0 76H1200" opacity="0.6" />
+  </g>
+  <g transform="translate(0,160) scale(1,-1)">
+    <g opacity="0.55" class="stroke-main" stroke-width="1.2">
+      <path d="M0 20H1200" />
+      <path d="M0 32H1200" />
+    </g>
+    <g opacity="0.45" class="stroke-main" stroke-width="1.8">
+      <path d="M0 56 L40 24 L80 56 L120 24 L160 56 L200 24 L240 56 L280 24 L320 56 L360 24 L400 56 L440 24 L480 56 L520 24 L560 56 L600 24 L640 56 L680 24 L720 56 L760 24 L800 56 L840 24 L880 56 L920 24 L960 56 L1000 24 L1040 56 L1080 24 L1120 56 L1160 24 L1200 56" />
+      <path d="M0 44 L40 12 L80 44 L120 12 L160 44 L200 12 L240 44 L280 12 L320 44 L360 12 L400 44 L440 12 L480 44 L520 12 L560 44 L600 12 L640 44 L680 12 L720 44 L760 12 L800 44 L840 12 L880 44 L920 12 L960 44 L1000 12 L1040 44 L1080 12 L1120 44 L1160 12 L1200 44" opacity="0.6" />
+    </g>
+    <g stroke="#D66C5B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.35">
+      <path d="M0 40 L40 20 L80 40 L120 20 L160 40 L200 20 L240 40 L280 20 L320 40 L360 20 L400 40 L440 20 L480 40 L520 20 L560 40 L600 20 L640 40 L680 20 L720 40 L760 20 L800 40 L840 20 L880 40 L920 20 L960 40 L1000 20 L1040 40 L1080 20 L1120 40 L1160 20 L1200 40" />
+    </g>
+    <g opacity="0.5" class="stroke-main" stroke-width="1">
+      <path d="M0 68H1200" />
+      <path d="M0 76H1200" opacity="0.6" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .a {
+        stroke: #c8b28a;
+        stroke-opacity: .85;
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .b {
+        stroke: #c8b28a;
+        stroke-opacity: .55;
+        stroke-width: 1.4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .c {
+        stroke: #c8b28a;
+        stroke-opacity: .35;
+        stroke-width: 1;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .d {
+        stroke: #c8b28a;
+        stroke-opacity: .25;
+        stroke-width: .9;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="half">
+    <path class="a" d="M0 72L16 56l16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16" />
+    <path class="a" d="M0 88L16 72l16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16" />
+    <path class="b" d="M0 64L16 48l16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16" />
+    <path class="b" d="M0 96l16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16 16-16 16 16" />
+    <g class="c">
+      <path d="m8 56 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8m8-8 8 8" />
+      <path d="m16 56-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8m24-8-8 8" />
+    </g>
+    <g class="d">
+      <path d="M0 40h256" />
+      <path d="m0 40 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8" />
+      <path d="M0 52h256" />
+      <path d="M0 100h256" />
+    </g>
+    <g class="d">
+      <path d="m0 80 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8" />
+    </g>
+  </g>
+  <use href="#half" />
+  <g transform="translate(0,256) scale(1,-1)">
+    <use href="#half" />
+  </g>
+  <path d="M0 0h256M0 256h256" stroke="rgba(0,0,0,0)" fill="none" />
+</svg>
