@@ -91,6 +91,7 @@ a, a:hover {
   max-width: 720px;
   text-align: center;
   box-shadow: 0 22px 60px rgba(12, 12, 12, 0.55);
+  animation: hero-float 9s ease-in-out infinite;
 }
 
 .fh5co-banner-text-box .quote-box {
@@ -191,6 +192,32 @@ hr {
   z-index: 2;
 }
 
+.fh5co-content-box .section-heading {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.fh5co-content-box .section-heading h4 {
+  color: #F1F1F1;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.fh5co-content-box .section-heading h2 {
+  color: #FFD166;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.fh5co-content-box .section-heading hr {
+  margin-left: 0;
+}
+
 /* ---------------- Content Boxes ---------------- */
 
 .fh5co-content-box {
@@ -227,6 +254,11 @@ hr {
   padding: 10px;
   background-color: rgba(32, 34, 32, 0.95);
   border: 3px solid rgba(255, 209, 102, 0.4);
+}
+
+.fh5co-content-box .gallery .card-img-top {
+  height: 240px;
+  object-fit: cover;
 }
 
 
@@ -333,6 +365,24 @@ footer .btn:hover {
   height: 20px;
 }
 
+/* ---------------- Motion ---------------- */
+@keyframes hero-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 22px 60px rgba(12, 12, 12, 0.55);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+    box-shadow: 0 26px 70px rgba(12, 12, 12, 0.6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fh5co-banner-text-box {
+    animation: none;
+  }
+}
+
 /* ---------------- Media Queries ---------------- */
 @media (max-width: 991px) {
   .fh5co-banner-text-box {
@@ -365,5 +415,8 @@ footer .btn:hover {
   .banner-lead {
     font-size: 15px;
     margin: 16px auto 24px auto;
+  }
+  .fh5co-content-box .gallery .card-img-top {
+    height: 200px;
   }
 }
