@@ -277,9 +277,22 @@ a, a:hover {
 .fh5co-network {
   background-color: #25231f;
   background-image: url('../images/tukutuku-sophisticated.svg');
-  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center 50%;
+}
+
+
+
+.fh5co-network::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(37,35,31,0.5) 0%, 
+    rgba(37,35,31,0.2) 100%
+  );
+  pointer-events: none;
 }
 
 .fh5co-about-us {
