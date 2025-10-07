@@ -4,27 +4,13 @@ Based on Fox template
 */
 
 /* ---------------- Body ---------------- */
-html {
-  min-height: 100%;
-  background-color: #202220;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-  position: relative;
-  min-height: 100%;
+  background-color: #202220;
   color: #F1F1F1;
   margin: 0;
   padding: 0;
-  background-color: #202220;
-  background-image:
-    radial-gradient(circle at 18% 14%, rgba(255, 209, 102, 0.18), transparent 55%),
-    linear-gradient(135deg, rgba(32, 34, 32, 0.92), rgba(32, 34, 32, 0.85));
-  background-repeat: no-repeat, no-repeat;
-  background-size: 140% 140%, 100% 100%;
-  background-position: top center, center;
-  background-attachment: fixed, fixed;
 }
 
 /* ---------------- Images & Backgrounds ---------------- */
@@ -76,26 +62,7 @@ nav {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   padding: 18px 0;
   position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
-nav::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('../images/header-footer-trim.svg');
-  background-repeat: repeat-x;
-  background-size: 160% 100%;
-  background-position: center;
-  opacity: 0.22;
-  pointer-events: none;
-  z-index: 0;
-}
-
-nav > * {
-  position: relative;
-  z-index: 1;
+  z-index: 30;
 }
 
 .navbar-collapse {
@@ -407,25 +374,6 @@ footer {
   color: #F5E6B8;
   padding: 60px 20px 30px 20px;
   position: relative;
-  overflow: hidden;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url('../images/header-footer-trim.svg');
-  background-repeat: repeat-x;
-  background-size: 180% 100%;
-  background-position: center;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-}
-
-footer > * {
-  position: relative;
-  z-index: 1;
 }
 
 footer h4 {
