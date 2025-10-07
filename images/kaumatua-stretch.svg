@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kaumātua performing gentle stretches</title>
+  <desc id="desc">Stylised illustration of an older Māori adult stretching alongside a supporter.</desc>
+  <defs>
+    <linearGradient id="sunrise" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf0d5" />
+      <stop offset="100%" stop-color="#f7c59f" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sunrise)" />
+  <g fill="#ffffff" opacity="0.2">
+    <circle cx="60" cy="80" r="36" />
+    <circle cx="360" cy="60" r="28" />
+    <circle cx="320" cy="120" r="24" />
+  </g>
+  <g>
+    <path d="M80 230 C 70 210 72 188 92 174 C 120 156 164 170 180 198 C 196 226 180 258 150 268 C 124 276 92 260 80 230 Z" fill="#427a6d" />
+    <path d="M108 134 C 124 114 154 110 174 126 C 190 138 194 156 192 174 C 188 202 162 220 134 214 C 106 208 92 172 108 134 Z" fill="#f1d2b3" />
+    <path d="M172 220 C 190 188 224 176 256 190 C 286 202 304 236 298 268 L 214 268 C 198 260 186 242 172 220 Z" fill="#275952" />
+    <path d="M254 128 C 268 112 292 110 308 122 C 324 134 330 154 326 174 C 320 204 292 226 266 222 C 236 218 228 166 254 128 Z" fill="#c88e60" />
+    <path d="M152 156 Q 166 152 180 160 L 204 188 L 196 214 L 170 188 L 152 156 Z" fill="#f1d2b3" />
+    <path d="M260 156 Q 276 156 290 170 L 316 206 L 302 220 L 276 190 L 252 168 L 260 156 Z" fill="#c88e60" />
+    <circle cx="260" cy="120" r="28" fill="#f5d0a2" />
+    <circle cx="118" cy="110" r="26" fill="#f1d2b3" />
+    <path d="M112 104 C 118 96 132 96 140 104 C 146 108 148 116 148 124 C 140 126 132 128 122 128 C 112 126 104 120 100 112 C 104 108 108 106 112 104 Z" fill="#1c2626" opacity="0.35" />
+    <path d="M248 116 C 254 104 272 102 282 110 C 290 114 294 124 294 134 C 284 138 270 140 258 138 C 246 136 238 128 236 120 C 240 118 244 116 248 116 Z" fill="#0f1918" opacity="0.35" />
+    <rect x="40" y="250" width="320" height="40" rx="20" fill="#1e4b46" opacity="0.4" />
+  </g>
+</svg>
