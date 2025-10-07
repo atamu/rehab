@@ -82,17 +82,19 @@ nav {
   box-shadow: none;
 }
 
+/* Desktop logo */
 .navbar-brand img {
   display: block;
-  height: 72px;
-  max-height: 72px;
+  height: 90px;       /* was 72px */
+  max-height: 90px;
   width: auto;
 }
 
+/* Mobile logo */
 @media (max-width: 576px) {
   .navbar-brand img {
-    height: 56px;
-    max-height: 56px;
+    height: 68px;     /* was 56px */
+    max-height: 68px;
   }
 }
 
@@ -280,9 +282,8 @@ a, a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 50%;
+  
 }
-
-
 
 .fh5co-network::after {
   content: "";
