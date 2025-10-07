@@ -67,7 +67,7 @@ nav {
 
 .navbar-collapse {
   justify-content: flex-end;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 140ms ease-out, opacity 140ms ease-out;
   position: relative;
   z-index: 30;
 }
@@ -154,7 +154,6 @@ nav {
 
   .navbar .navbar-collapse.collapsing {
     height: auto !important;
-    transition: transform 0.3s ease, opacity 0.3s ease;
     display: block;
     pointer-events: auto;
   }
