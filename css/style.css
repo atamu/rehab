@@ -30,7 +30,7 @@ body {
 
 .parallax-window2 {
   background-color: #202220;
-  background-image: url('../images/therapist-session.jpg');
+  background-image: url('../images/hero-manual-therapy.jpg');
   background-position: center;
   background-size: cover;
   overflow: visible;
@@ -320,50 +320,13 @@ hr {
   z-index: 2;
 }
 
-.fh5co-content-box .section-heading {
-  margin-bottom: 50px;
-  text-align: left;
+/* ---------------- Service Cards ---------------- */
+
+#service .service-grid {
+  margin-top: 60px;
 }
 
-.fh5co-content-box .section-heading h4 {
-  color: #F1F1F1;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-
-.fh5co-content-box .section-heading h2 {
-  color: #FFD166;
-  font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-}
-
-.fh5co-content-box .section-heading hr {
-  margin-left: 0;
-}
-
-/* ---------------- Content Boxes ---------------- */
-
-.fh5co-content-box {
-  background: #2A2C2A;
-  padding-bottom: 100px;
-}
-
-.fh5co-content-box img {
-  width: 100%;
-  display: block;
-}
-
-.fh5co-content-box figure,
-.fh5co-content-box .card-img-top {
-  background-color: transparent;
-}
-
-.fh5co-content-box .card {
+#service .service-card {
   background: rgba(47, 49, 47, 0.95);
   border: 1px solid rgba(255, 209, 102, 0.25);
   border-radius: 18px;
@@ -372,62 +335,37 @@ hr {
   overflow: hidden;
 }
 
-.fh5co-content-box .card-body {
+#service .service-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+#service .service-card .card-body {
   background: transparent;
   color: inherit;
   padding: 25px;
 }
 
-.fh5co-content-box .card-img-top.rounded-circle {
-  padding: 10px;
-  background-color: rgba(32, 34, 32, 0.95);
-  border: 3px solid rgba(255, 209, 102, 0.4);
+#service .service-card .card-title {
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
 }
 
-.fh5co-content-box .gallery .card-img-top {
-  height: 240px;
-  object-fit: cover;
+#service .service-card .card-text {
+  color: #F1F1F1;
+  margin-bottom: 0;
 }
 
+@media (max-width: 767.98px) {
+  #service .service-grid {
+    margin-top: 40px;
+  }
 
-.fh5co-content-box .trainers {
-  position: relative;
-  padding: 60px 0;
-  margin: 80px 0 60px 0;
-  background: #1f201f url("../images/clinic-treatment.jpg") center/cover no-repeat;
-  border-radius: 28px;
-  overflow: hidden;
-}
-
-.fh5co-content-box .trainers::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(32, 34, 32, 0.88), rgba(42, 44, 42, 0.62));
-}
-
-.fh5co-content-box .trainers > * {
-  position: relative;
-  z-index: 1;
-}
-
-.fh5co-content-box .trainers .card-body {
-  background: rgba(47, 49, 47, 0.95);
-  border-radius: 18px;
-  padding: 30px 25px 45px 25px;
-  margin-top: 20px;
-  color: #F5E6B8;
-  position: relative;
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
-}
-
-.fh5co-content-box .trainers .card-body::before {
-  content: "";
-  position: absolute;
-  border: 20px solid transparent;
-  border-bottom-color: rgba(47, 49, 47, 0.95);
-  margin-top: -70px;
-  margin-left: -15px;
+  #service .service-card .card-img-top {
+    height: 200px;
+  }
 }
 
 /* ---------------- Footer ---------------- */
