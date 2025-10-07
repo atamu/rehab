@@ -1,29 +1,36 @@
-// ;(function () {
+;(function ($) {
+  'use strict';
 
-    // 'use strict';
+  function extractImageFromStyle($el) {
+    var background = $el.css('background-image');
+    if (!background || background === 'none') {
+      return null;
+    }
 
-    // var wowAnimation = function() {
-        // var wow = new WOW(
-            // {
-                // animateClass: 'animated',
-                // offset:       150,
-                // callback:     function(box) {
-                    // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                // }
-            // }
-        // );
-        // wow.init();
-    // }
+    var matches = background.match(/url\((['"]?)(.*?)\1\)/);
+    return matches && matches[2] ? matches[2] : null;
+  }
 
+  function initParallax() {
+    if (typeof $.fn.parallax !== 'function') {
+      return;
+    }
 
-    // (function($) {
-        // wowAnimation();
-    // })(jQuery);
+    $('.parallax-window2').each(function () {
+      var $window = $(this);
+      var imageSrc = $window.data('image-src') || extractImageFromStyle($window);
 
+      if (!imageSrc) {
+        return;
+      }
 
-// }());
+      $window.parallax({
+        imageSrc: imageSrc
+      });
+    });
+  }
 
-
-
-// main.js
-// Currently, no animations are used. Keeping this file for future scripts if needed.
+  $(function () {
+    initParallax();
+  });
+})(jQuery);
