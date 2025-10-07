@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+  <defs>
+    <linearGradient id="avatarBgEmma" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a2c2a"/>
+      <stop offset="100%" stop-color="#1f201f"/>
+    </linearGradient>
+    <linearGradient id="topEmma" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f5e6b8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="260" cy="260" r="250" fill="url(#avatarBgEmma)"/>
+  <circle cx="260" cy="180" r="120" fill="#c18753"/>
+  <path d="M200 170c-10 60 0 140 60 140s70-80 60-140c-8-42-38-74-60-74s-54 32-60 74z" fill="#f3d2a4"/>
+  <path d="M152 420c22-70 70-110 108-110s88 40 108 110c10 36-18 72-56 72h-104c-38 0-68-36-56-72z" fill="url(#topEmma)"/>
+  <path d="M184 246c18 34 50 52 76 52s54-18 76-52c-10-16-18-36-18-56 0-36-22-64-58-64s-58 28-58 64c0 20-8 40-18 56z" fill="#3b3d39"/>
+  <path d="M178 158c10-40 46-68 82-68s70 28 82 68c8 24-12 46-32 36-22-12-32-20-50-20s-26 8-50 20c-20 10-38-12-32-36z" fill="#1c1d1c"/>
+  <path d="M208 312c0 22 22 40 52 40s52-18 52-40" fill="none" stroke="#202220" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="220" cy="230" r="18" fill="#202220"/>
+  <circle cx="300" cy="230" r="18" fill="#202220"/>
+  <circle cx="228" cy="226" r="8" fill="#f5f5f5" opacity="0.7"/>
+  <circle cx="308" cy="226" r="8" fill="#f5f5f5" opacity="0.7"/>
+  <path d="M240 280c12 8 28 8 40 0" fill="none" stroke="#a05d2a" stroke-width="8" stroke-linecap="round"/>
+</svg>
