@@ -26,11 +26,6 @@ body {
   overflow: hidden;
 }
 
-.parallax-window {
-  background-attachment: fixed;
-  will-change: background-position;
-}
-
 .bg-img .container {
   display: flex;
   justify-content: center;
@@ -459,9 +454,6 @@ footer .btn:hover {
 }
 
 @media (max-width: 767px) {
-  .parallax-window {
-    background-attachment: scroll;
-  }
   .navbar-brand {
     margin-right: 0;
     margin-bottom: 10px;
