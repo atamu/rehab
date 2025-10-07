@@ -1,0 +1,270 @@
+/*
+Theme Name: Body Rehab Physiotherapy Limited
+Based on Fox template
+*/
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+/* ---------------- Body ---------------- */
+body {
+  font-family: 'Comic Neue', cursive, sans-serif;
+  overflow-x: hidden;
+  background-color: #202220;
+  color: #F1F1F1;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- Images & Backgrounds ---------------- */
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+/* ---------------- Navbar ---------------- */
+nav {
+  background: rgba(32, 34, 32, 0.95);
+}
+
+.navbar-nav a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #F5E6B8;
+  font-weight: 700;
+  /* transition removed */
+}
+
+.navbar-nav a:hover {
+  color: #FFD166;
+}
+
+.navbar-nav .btn-danger {
+  background: #F5E6B8;
+  border-color: #F5E6B8;
+  border-radius: 0;
+  color: #202220;
+  font-weight: bold;
+  /* transition removed */
+}
+
+.navbar-nav .btn-danger:hover {
+  background: #FFD166;
+  border-color: #FFD166;
+  color: #202220;
+}
+
+/* ---------------- Links ---------------- */
+a, a:hover {
+  color: #FFD166;
+  text-decoration: none;
+  /* transition removed */
+}
+
+/* ---------------- Banner ---------------- */
+.fh5co-banner-text-box {
+  position: relative;
+  display: inline-block;
+  margin: 250px auto 0 auto;
+  padding: 30px 40px;
+  background: rgba(32, 34, 32, 0.7);
+  border-radius: 10px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.fh5co-banner-text-box .quote-box {
+  max-width: 100%;
+  padding: 10px 0;
+}
+
+.fh5co-banner-text-box .quote-box h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2em;
+  margin: 0;
+  color: #FFD166;
+  text-align: center;
+}
+
+.fh5co-banner-text-box .quote-box h2 span {
+  display: block;
+  font-size: 42px;
+  color: #F5E6B8;
+  margin-top: 5px;
+}
+
+.fh5co-banner-text-box a {
+  color: #FFD166;
+  border: 2px solid #FFD166;
+  border-radius: 0;
+  min-width: 150px;
+  font-weight: bold;
+  padding: 10px 20px;
+  /* transition removed */
+}
+
+.fh5co-banner-text-box a:hover {
+  color: #F5E6B8;
+  border-color: #F5E6B8;
+  background: transparent;
+}
+
+/* ---------------- Sections ---------------- */
+.fh5co-network,
+.fh5co-about-us {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0 30px 0;
+  position: relative;
+}
+
+.fh5co-network::before,
+.fh5co-about-us::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(32,34,32,0.7);
+  z-index: 1;
+}
+
+.fh5co-network h2,
+.fh5co-about-us h2 {
+  color: #FFD166;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.fh5co-network p,
+.fh5co-about-us p,
+.fh5co-network h4,
+.fh5co-about-us h4,
+.fh5co-network h5,
+.fh5co-about-us h5 {
+  color: #F1F1F1;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+hr {
+  border-color: #FFD166;
+  border-width: 5px;
+  max-width: 100px;
+  margin-left: 0;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------------- Content Boxes ---------------- */
+.fh5co-content-box {
+  background: #2A2C2A;
+  padding-bottom: 100px;
+}
+
+.fh5co-content-box img {
+  width: 100%;
+  display: block;
+}
+
+.fh5co-content-box .trainers {
+  position: relative;
+  padding: 50px 0;
+  margin: 70px 0;
+  background: #282A25 url("../images/gym2.jpg") center/cover no-repeat;
+}
+
+.fh5co-content-box .trainers .card-body {
+  background: rgba(64, 67, 50, 0.95);
+  border-radius: 15px;
+  padding: 30px 20px 50px 20px;
+  margin-top: 30px;
+  color: #F5E6B8;
+  position: relative;
+}
+
+.fh5co-content-box .trainers .card-body::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-bottom-color: rgba(64, 67, 50, 0.95);
+  margin-top: -70px;
+  margin-left: -15px;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background: #202220;
+  color: #F5E6B8;
+  padding: 50px 20px 20px 20px;
+  position: relative;
+}
+
+footer h4 {
+  color: #FFD166;
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer input[type='text'],
+footer input[type='email'] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #FFD166;
+  color: #F1F1F1;
+  padding: 5px 0;
+}
+
+footer input[type='text']:focus,
+footer input[type='email']:focus {
+  outline: none;
+  border-color: #FFD166;
+}
+
+footer .btn {
+  min-width: 150px;
+  border-radius: 0;
+  background: #FFD166;
+  color: #202220;
+  font-weight: bold;
+  /* transition removed */
+}
+
+footer .btn:hover {
+  background: #F5E6B8;
+  color: #202220;
+}
+
+/* ---------------- Media Queries ---------------- */
+@media (max-width: 991px) {
+  .fh5co-banner-text-box {
+    padding: 20px 25px;
+    margin-top: 180px;
+  }
+  .fh5co-banner-text-box h2 {
+    font-size: 36px;
+  }
+  .fh5co-banner-text-box h2 span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fh5co-banner-text-box {
+    padding: 15px 20px;
+  }
+  .fh5co-banner-text-box h2 {
+    font-size: 28px;
+  }
+  .fh5co-banner-text-box h2 span {
+    font-size: 24px;
+  }
+}
