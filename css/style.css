@@ -68,17 +68,25 @@ nav {
 .navbar-brand {
   display: flex;
   align-items: center;
-  padding: 6px 18px;
   margin-right: 30px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(40, 42, 40, 0.95), rgba(28, 29, 28, 0.95));
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .navbar-brand img {
   display: block;
-  max-height: 64px;
+  height: 72px;
+  max-height: 72px;
   width: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 56px;
+    max-height: 56px;
+  }
 }
 
 .navbar-nav a {
