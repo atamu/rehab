@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Whānau walking together</title>
+  <desc id="desc">Stylised illustration of a Māori family taking a supportive walk along the waterfront.</desc>
+  <defs>
+    <linearGradient id="eveningSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fb7be" />
+      <stop offset="100%" stop-color="#114b5f" />
+    </linearGradient>
+    <linearGradient id="harbour" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#88d498" />
+      <stop offset="100%" stop-color="#317773" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#eveningSky)" />
+  <rect x="0" y="180" width="400" height="120" fill="url(#harbour)" />
+  <g fill="#ffffff" opacity="0.35">
+    <circle cx="80" cy="70" r="18" />
+    <circle cx="120" cy="50" r="10" />
+    <circle cx="340" cy="90" r="22" />
+  </g>
+  <g>
+    <path d="M40 244 C 44 226 60 212 86 210 C 112 208 138 220 148 238 L 108 268 C 82 264 56 258 40 244 Z" fill="#f2bb88" />
+    <path d="M82 152 C 102 130 138 134 154 158 C 166 178 162 206 144 222 C 124 240 94 240 76 222 C 56 204 58 172 82 152 Z" fill="#d08b5b" />
+    <path d="M154 212 C 166 186 194 170 226 172 C 256 174 282 194 292 222 C 300 246 288 270 266 280 L 198 280 C 176 262 162 238 154 212 Z" fill="#f5d0a2" />
+    <path d="M240 128 C 260 108 294 114 308 138 C 320 158 318 188 302 206 C 284 226 254 228 236 210 C 216 188 220 150 240 128 Z" fill="#9a5d37" />
+    <path d="M302 210 C 316 190 344 180 366 188 C 384 194 394 212 390 232 C 386 252 366 270 340 274 L 294 266 C 286 244 292 226 302 210 Z" fill="#f2bb88" />
+    <circle cx="108" cy="132" r="28" fill="#d08b5b" />
+    <circle cx="236" cy="122" r="32" fill="#9a5d37" />
+    <circle cx="322" cy="180" r="26" fill="#f2bb88" />
+    <path d="M96 124 C 110 112 130 116 138 132 C 142 140 140 152 132 160 C 120 162 108 162 98 156 C 88 150 84 140 86 130 C 90 128 92 126 96 124 Z" fill="#1c2626" opacity="0.4" />
+    <path d="M226 114 C 238 104 260 106 270 120 C 276 128 276 138 272 148 C 262 150 250 150 240 146 C 228 142 222 132 220 120 C 222 118 224 116 226 114 Z" fill="#101a1a" opacity="0.4" />
+    <path d="M314 172 C 324 162 340 164 348 174 C 354 180 356 188 354 198 C 346 200 338 204 330 204 C 320 204 312 198 308 190 C 310 184 310 178 314 172 Z" fill="#101a1a" opacity="0.35" />
+    <path d="M60 260 Q 90 248 122 252 Q 150 256 176 270 Q 214 290 260 288 Q 308 286 342 262" fill="none" stroke="#083d41" stroke-width="6" stroke-linecap="round" opacity="0.35" />
+  </g>
+</svg>
