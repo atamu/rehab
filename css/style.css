@@ -30,6 +30,10 @@ body {
 
 .parallax-window2 {
   background-color: #202220;
+  background-image: url('../images/therapist-session.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: visible;
 }
 
 .parallax-window2::before {
@@ -133,6 +137,7 @@ nav {
     transform: translateY(-12px);
     opacity: 0;
     pointer-events: none;
+    z-index: 5;
   }
 
   .navbar .navbar-collapse.show {
