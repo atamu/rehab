@@ -278,8 +278,8 @@ a, a:hover {
   background-color: #25231f;
   background-image: url('../images/tukutuku-sophisticated.svg');
   background-position: center top;
-  background-repeat: repeat;
-  background-size: 256px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fh5co-about-us {
