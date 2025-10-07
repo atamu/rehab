@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Massage therapy with brown hands supporting a shoulder</title>
+  <desc id="desc">Illustrated close up of a physiotherapist gently massaging a client's shoulder with warm brown hands in a calm treatment room.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4fbff" />
+      <stop offset="100%" stop-color="#d2e4f2" />
+    </linearGradient>
+    <linearGradient id="sheetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#dfe9f2" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="skinDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a6673e" />
+      <stop offset="100%" stop-color="#6b3c21" />
+    </linearGradient>
+    <linearGradient id="skinLight" x1="0" y1="0" x2="0.8" y2="0.8">
+      <stop offset="0%" stop-color="#c8804c" />
+      <stop offset="100%" stop-color="#814829" />
+    </linearGradient>
+    <linearGradient id="armGrad" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#d99a64" />
+      <stop offset="80%" stop-color="#9a5a32" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d87a6" />
+      <stop offset="100%" stop-color="#25516a" />
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9dc4d8" />
+      <stop offset="100%" stop-color="#6d8aa2" />
+    </linearGradient>
+    <filter id="softShadow" x="-0.2" y="-0.2" width="1.4" height="1.4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" />
+      <feOffset dx="0" dy="6" result="offsetblur" />
+      <feFlood flood-color="#1c2d3a" flood-opacity="0.2" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="560" fill="url(#bgGrad)" />
+  <path d="M0 420 Q160 360 320 380 T800 360 V560 H0 Z" fill="url(#sheetGrad)" />
+  <g filter="url(#softShadow)">
+    <path d="M120 280 Q200 240 280 260 T480 240 Q560 240 620 260 T700 320 L640 360 Q560 330 480 320 T280 340 Q200 360 160 380 Z" fill="url(#tableGrad)" opacity="0.55" />
+  </g>
+  <g>
+    <path d="M250 320 Q310 260 380 260 Q430 262 470 288 Q520 320 520 360 Q520 404 480 430 T380 460 Q320 458 270 430 Q230 408 230 360 Q230 332 250 320 Z" fill="url(#skinDeep)" />
+    <path d="M252 328 Q300 292 366 292 Q414 292 454 320 Q498 350 498 376 Q498 402 462 420 T374 440 Q320 440 278 418 Q244 400 244 368 Q244 340 252 328 Z" fill="rgba(255,255,255,0.15)" />
+  </g>
+  <g>
+    <path d="M430 206 Q450 180 494 182 Q540 184 574 210 T632 280 Q650 320 622 348 Q596 374 548 360 Q508 348 476 318 Q438 282 420 250 Q408 226 430 206 Z" fill="url(#shirtGrad)" />
+    <path d="M360 206 Q320 212 300 240 Q288 258 296 284 Q304 312 330 318 Q360 326 390 320 T450 286 Q468 260 456 230 Q444 202 406 200 Q380 198 360 206 Z" fill="url(#armGrad)" />
+    <path d="M320 282 Q340 268 372 268 Q398 270 422 288 Q450 310 454 334 Q456 360 432 378 Q408 398 370 398 Q330 398 308 376 Q288 354 292 326 Q296 300 320 282 Z" fill="url(#skinLight)" />
+    <path d="M402 232 Q414 214 440 210 Q460 210 476 222 T508 260 Q520 280 504 294 Q488 310 466 300 T422 266 Q404 248 402 232 Z" fill="url(#skinDeep)" />
+  </g>
+  <g>
+    <path d="M408 328 Q448 300 486 300 Q526 300 560 320 T620 372 Q634 392 620 412 Q606 432 576 428 T510 402 Q476 382 450 362 Q428 346 408 328 Z" fill="url(#skinLight)" />
+    <path d="M356 356 Q388 332 436 334 Q468 338 500 360 T556 408 Q570 426 556 440 Q540 454 512 446 T448 410 Q408 384 380 364 Z" fill="url(#skinDeep)" />
+    <path d="M528 330 Q550 318 584 324 Q612 332 640 354 T684 402 Q694 420 682 436 Q670 450 646 444 T596 416 Q560 392 532 364 Q518 350 528 330 Z" fill="url(#skinDeep)" />
+  </g>
+  <g opacity="0.2">
+    <path d="M300 352 Q380 300 458 316 T588 380" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" />
+    <path d="M330 384 Q402 342 470 352 T572 404" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" />
+  </g>
+  <g opacity="0.18">
+    <circle cx="120" cy="120" r="6" fill="#ffffff" />
+    <circle cx="680" cy="160" r="8" fill="#ffffff" />
+    <circle cx="700" cy="80" r="5" fill="#ffffff" />
+  </g>
+</svg>

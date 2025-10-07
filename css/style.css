@@ -4,11 +4,11 @@ Based on Fox template
 */
 
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 /* ---------------- Body ---------------- */
 body {
-  font-family: 'Comic Neue', cursive, sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   background-color: #202220;
   color: #F1F1F1;
@@ -22,6 +22,26 @@ body {
   background-position: center;
   background-size: cover;
   padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-window2 {
+  background-color: #202220;
+}
+
+.parallax-window2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(32, 34, 32, 0.85), rgba(42, 44, 42, 0.7)),
+              radial-gradient(circle at 20% 20%, rgba(255, 209, 102, 0.18), transparent 60%);
+  z-index: 0;
+}
+
+.parallax-window2 > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------------- Navbar ---------------- */
@@ -33,8 +53,7 @@ nav {
   font-size: 16px;
   text-transform: uppercase;
   color: #F5E6B8;
-  font-weight: 700;
-  /* transition removed */
+  font-weight: 600;
 }
 
 .navbar-nav a:hover {
@@ -44,10 +63,9 @@ nav {
 .navbar-nav .btn-danger {
   background: #F5E6B8;
   border-color: #F5E6B8;
-  border-radius: 0;
+  border-radius: 40px;
   color: #202220;
-  font-weight: bold;
-  /* transition removed */
+  font-weight: 700;
 }
 
 .navbar-nav .btn-danger:hover {
@@ -60,19 +78,19 @@ nav {
 a, a:hover {
   color: #FFD166;
   text-decoration: none;
-  /* transition removed */
 }
 
 /* ---------------- Banner ---------------- */
 .fh5co-banner-text-box {
   position: relative;
   display: inline-block;
-  margin: 250px auto 0 auto;
-  padding: 30px 40px;
-  background: rgba(32, 34, 32, 0.7);
-  border-radius: 10px;
-  max-width: 90%;
+  margin: 220px auto 80px auto;
+  padding: 36px 44px;
+  background: rgba(32, 34, 32, 0.78);
+  border-radius: 14px;
+  max-width: 720px;
   text-align: center;
+  box-shadow: 0 22px 60px rgba(12, 12, 12, 0.55);
 }
 
 .fh5co-banner-text-box .quote-box {
@@ -82,34 +100,43 @@ a, a:hover {
 
 .fh5co-banner-text-box .quote-box h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 1.2em;
   margin: 0;
   color: #FFD166;
-  text-align: center;
 }
 
 .fh5co-banner-text-box .quote-box h2 span {
   display: block;
-  font-size: 42px;
+  font-size: 30px;
   color: #F5E6B8;
-  margin-top: 5px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+}
+
+.banner-lead {
+  margin: 22px auto 32px auto;
+  font-size: 18px;
+  max-width: 520px;
+  line-height: 1.7em;
+  color: #F1F1F1;
 }
 
 .fh5co-banner-text-box a {
-  color: #FFD166;
-  border: 2px solid #FFD166;
-  border-radius: 0;
-  min-width: 150px;
-  font-weight: bold;
-  padding: 10px 20px;
-  /* transition removed */
+  color: #202220;
+  border: none;
+  border-radius: 40px;
+  min-width: 180px;
+  font-weight: 700;
+  padding: 14px 32px;
+  display: inline-block;
+  background: #FFD166;
+  box-shadow: 0 10px 25px rgba(255, 209, 102, 0.35);
 }
 
 .fh5co-banner-text-box a:hover {
-  color: #F5E6B8;
-  border-color: #F5E6B8;
-  background: transparent;
+  background: #F5E6B8;
+  color: #202220;
 }
 
 /* ---------------- Sections ---------------- */
@@ -118,7 +145,7 @@ a, a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 50px 0 30px 0;
+  padding: 70px 0 50px 0;
   position: relative;
 }
 
@@ -128,7 +155,7 @@ a, a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(32,34,32,0.7);
+  background: rgba(32, 34, 32, 0.7);
   z-index: 1;
 }
 
@@ -137,7 +164,7 @@ a, a:hover {
   color: #FFD166;
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   position: relative;
   z-index: 2;
 }
@@ -156,8 +183,8 @@ a, a:hover {
 
 hr {
   border-color: #FFD166;
-  border-width: 5px;
-  max-width: 100px;
+  border-width: 4px;
+  max-width: 110px;
   margin-left: 0;
   border-radius: 5px;
   position: relative;
@@ -165,6 +192,7 @@ hr {
 }
 
 /* ---------------- Content Boxes ---------------- */
+
 .fh5co-content-box {
   background: #2A2C2A;
   padding-bottom: 100px;
@@ -175,27 +203,69 @@ hr {
   display: block;
 }
 
+.fh5co-content-box figure,
+.fh5co-content-box .card-img-top {
+  background-color: transparent;
+}
+
+.fh5co-content-box .card {
+  background: rgba(47, 49, 47, 0.95);
+  border: 1px solid rgba(255, 209, 102, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  color: #F5E6B8;
+  overflow: hidden;
+}
+
+.fh5co-content-box .card-body {
+  background: transparent;
+  color: inherit;
+  padding: 25px;
+}
+
+.fh5co-content-box .card-img-top.rounded-circle {
+  padding: 10px;
+  background-color: rgba(32, 34, 32, 0.95);
+  border: 3px solid rgba(255, 209, 102, 0.4);
+}
+
+
 .fh5co-content-box .trainers {
   position: relative;
-  padding: 50px 0;
-  margin: 70px 0;
-  background: #282A25 url("../images/gym2.jpg") center/cover no-repeat;
+  padding: 60px 0;
+  margin: 80px 0 60px 0;
+  background: #1f201f url("../images/team-community.svg") center/cover no-repeat;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.fh5co-content-box .trainers::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(32, 34, 32, 0.88), rgba(42, 44, 42, 0.62));
+}
+
+.fh5co-content-box .trainers > * {
+  position: relative;
+  z-index: 1;
 }
 
 .fh5co-content-box .trainers .card-body {
-  background: rgba(64, 67, 50, 0.95);
-  border-radius: 15px;
-  padding: 30px 20px 50px 20px;
-  margin-top: 30px;
+  background: rgba(47, 49, 47, 0.95);
+  border-radius: 18px;
+  padding: 30px 25px 45px 25px;
+  margin-top: 20px;
   color: #F5E6B8;
   position: relative;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
 }
 
 .fh5co-content-box .trainers .card-body::before {
   content: "";
   position: absolute;
   border: 20px solid transparent;
-  border-bottom-color: rgba(64, 67, 50, 0.95);
+  border-bottom-color: rgba(47, 49, 47, 0.95);
   margin-top: -70px;
   margin-left: -15px;
 }
@@ -204,7 +274,7 @@ hr {
 footer {
   background: #202220;
   color: #F5E6B8;
-  padding: 50px 20px 20px 20px;
+  padding: 60px 20px 30px 20px;
   position: relative;
 }
 
@@ -220,22 +290,21 @@ footer input[type='email'] {
   border: none;
   border-bottom: 2px solid #FFD166;
   color: #F1F1F1;
-  padding: 5px 0;
+  padding: 6px 0;
 }
 
 footer input[type='text']:focus,
 footer input[type='email']:focus {
   outline: none;
-  border-color: #FFD166;
+  border-color: #F5E6B8;
 }
 
 footer .btn {
   min-width: 150px;
-  border-radius: 0;
+  border-radius: 40px;
   background: #FFD166;
   color: #202220;
-  font-weight: bold;
-  /* transition removed */
+  font-weight: 700;
 }
 
 footer .btn:hover {
@@ -243,11 +312,32 @@ footer .btn:hover {
   color: #202220;
 }
 
+.social-links .nav {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links .nav a {
+  background: rgba(47, 49, 47, 0.95);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+.social-links .nav img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ---------------- Media Queries ---------------- */
 @media (max-width: 991px) {
   .fh5co-banner-text-box {
-    padding: 20px 25px;
-    margin-top: 180px;
+    padding: 28px 30px;
+    margin-top: 140px;
   }
   .fh5co-banner-text-box h2 {
     font-size: 36px;
@@ -255,16 +345,25 @@ footer .btn:hover {
   .fh5co-banner-text-box h2 span {
     font-size: 30px;
   }
+  .banner-lead {
+    font-size: 16px;
+    margin: 18px auto 26px auto;
+  }
 }
 
 @media (max-width: 767px) {
   .fh5co-banner-text-box {
-    padding: 15px 20px;
+    padding: 22px 20px;
+    margin-top: 110px;
   }
   .fh5co-banner-text-box h2 {
     font-size: 28px;
   }
   .fh5co-banner-text-box h2 span {
     font-size: 24px;
+  }
+  .banner-lead {
+    font-size: 15px;
+    margin: 16px auto 24px auto;
   }
 }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+  <defs>
+    <linearGradient id="avatarBgWiremu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f201f"/>
+      <stop offset="100%" stop-color="#2e302e"/>
+    </linearGradient>
+    <linearGradient id="shirtWiremu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5f6f6b"/>
+      <stop offset="100%" stop-color="#3c4541"/>
+    </linearGradient>
+  </defs>
+  <circle cx="260" cy="260" r="250" fill="url(#avatarBgWiremu)"/>
+  <path d="M152 424c24-82 82-120 108-120h100c26 0 84 38 108 120 10 36-16 70-54 70H206c-38 0-66-34-54-70z" fill="url(#shirtWiremu)"/>
+  <circle cx="260" cy="192" r="118" fill="#8d5b32"/>
+  <path d="M192 186c-12 60 6 138 68 138s82-78 68-138c-10-46-36-78-68-78s-58 32-68 78z" fill="#b57640"/>
+  <path d="M176 150c18-52 58-80 84-80s64 28 82 80c10 26-8 50-30 40-24-12-42-20-52-20s-28 8-52 20c-22 10-40-14-32-40z" fill="#272927"/>
+  <circle cx="224" cy="238" r="20" fill="#202220"/>
+  <circle cx="300" cy="238" r="20" fill="#202220"/>
+  <circle cx="232" cy="232" r="8" fill="#f5f5f5" opacity="0.7"/>
+  <circle cx="308" cy="232" r="8" fill="#f5f5f5" opacity="0.7"/>
+  <path d="M228 286c18 16 46 16 64 0" fill="none" stroke="#8d5b32" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 322c4 24 26 42 54 42s50-18 54-42" fill="none" stroke="#202220" stroke-width="10" stroke-linecap="round"/>
+</svg>
