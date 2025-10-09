@@ -9,12 +9,12 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
+  font-family: 'Coming Soon', 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
 }
 
 body {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.7;
   overflow-x: hidden;
   background-color: #202220;
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
+  font-family: 'Coming Soon', 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
   text-transform: none;
   letter-spacing: 0.01em;
 }
@@ -161,7 +161,7 @@ footer .footer1 img {
 }
 
 .navbar-nav a {
-  font-size: 18px;
+  font-size: 19px;
   color: #F5E6B8;
   font-weight: 700;
   text-transform: none;
@@ -304,8 +304,8 @@ a, a:hover {
   font-size: 32px;
   color: #F5E6B8;
   margin-top: 12px;
-  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
-  font-weight: 300;
+  font-family: 'Coming Soon', 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
+  font-weight: 400;
   letter-spacing: 0.015em;
   text-transform: none;
 }
@@ -316,7 +316,7 @@ a, a:hover {
   max-width: 520px;
   line-height: 1.8em;
   color: #F1F1F1;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .fh5co-banner-text-box a {
@@ -462,7 +462,7 @@ hr {
 
 #service .service-card .card-text {
   color: #F1F1F1;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 0;
 }
 
@@ -493,7 +493,7 @@ footer h4 {
 footer p,
 footer td,
 footer .nav-link {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 footer input[type='text'],
@@ -583,7 +583,7 @@ footer .btn:hover {
     font-size: 32px;
   }
   .banner-lead {
-    font-size: 18px;
+    font-size: 19px;
     margin: 18px auto 26px auto;
   }
 }
@@ -604,7 +604,7 @@ footer .btn:hover {
     font-size: 26px;
   }
   .banner-lead {
-    font-size: 16px;
+    font-size: 17px;
     margin: 16px auto 24px auto;
   }
   .fh5co-content-box .trainers .card,
