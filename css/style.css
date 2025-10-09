@@ -4,14 +4,28 @@ Based on Fox template
 */
 
 /* ---------------- Body ---------------- */
-body {
+body,
+button,
+input,
+textarea,
+select {
   font-family: 'Kalam', 'Patrick Hand', cursive;
+}
+
+body {
   font-weight: 400;
   overflow-x: hidden;
   background-color: #202220;
   color: #F1F1F1;
   margin: 0;
   padding: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font-weight: 400;
 }
 
 h1,
@@ -438,7 +452,7 @@ hr {
 
 #service .service-card .card-title {
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.04em;
   margin-bottom: 14px;
 }
 
