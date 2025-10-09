@@ -9,11 +9,13 @@ button,
 input,
 textarea,
 select {
-  font-family: 'Kalam', 'Patrick Hand', cursive;
+  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
 }
 
 body {
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
   overflow-x: hidden;
   background-color: #202220;
   color: #F1F1F1;
@@ -34,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Kalam', 'Patrick Hand', cursive;
+  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
   text-transform: none;
   letter-spacing: 0.01em;
 }
@@ -159,7 +161,7 @@ footer .footer1 img {
 }
 
 .navbar-nav a {
-  font-size: 16px;
+  font-size: 18px;
   color: #F5E6B8;
   font-weight: 700;
   text-transform: none;
@@ -291,7 +293,7 @@ a, a:hover {
 
 .fh5co-banner-text-box .quote-box h2 {
   font-weight: 700;
-  font-size: 46px;
+  font-size: 50px;
   line-height: 1.2em;
   margin: 0;
   color: #FFD166;
@@ -299,10 +301,10 @@ a, a:hover {
 
 .fh5co-banner-text-box .quote-box h2 span {
   display: block;
-  font-size: 30px;
+  font-size: 32px;
   color: #F5E6B8;
   margin-top: 12px;
-  font-family: 'Kalam', 'Patrick Hand', cursive;
+  font-family: 'Comic Neue', 'Kalam', 'Patrick Hand', cursive;
   font-weight: 300;
   letter-spacing: 0.015em;
   text-transform: none;
@@ -310,9 +312,9 @@ a, a:hover {
 
 .banner-lead {
   margin: 22px auto 32px auto;
-  font-size: 18px;
+  font-size: 20px;
   max-width: 520px;
-  line-height: 1.7em;
+  line-height: 1.8em;
   color: #F1F1F1;
   font-weight: 300;
 }
@@ -395,7 +397,7 @@ a, a:hover {
 .fh5co-about-us h2 {
   color: #FFD166;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 10px;
   position: relative;
   z-index: 2;
@@ -411,6 +413,7 @@ a, a:hover {
   font-weight: 400;
   position: relative;
   z-index: 2;
+  line-height: 1.75;
 }
 
 hr {
@@ -452,12 +455,14 @@ hr {
 
 #service .service-card .card-title {
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  font-size: 22px;
   margin-bottom: 14px;
 }
 
 #service .service-card .card-text {
   color: #F1F1F1;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -483,6 +488,12 @@ footer h4 {
   color: #FFD166;
   text-align: center;
   margin: 20px 0;
+}
+
+footer p,
+footer td,
+footer .nav-link {
+  font-size: 18px;
 }
 
 footer input[type='text'],
@@ -566,13 +577,13 @@ footer .btn:hover {
     margin-top: 100px;
   }
   .fh5co-banner-text-box h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
   .fh5co-banner-text-box h2 span {
-    font-size: 30px;
+    font-size: 32px;
   }
   .banner-lead {
-    font-size: 16px;
+    font-size: 18px;
     margin: 18px auto 26px auto;
   }
 }
@@ -587,13 +598,13 @@ footer .btn:hover {
     margin-top: 80px;
   }
   .fh5co-banner-text-box h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
   .fh5co-banner-text-box h2 span {
-    font-size: 24px;
+    font-size: 26px;
   }
   .banner-lead {
-    font-size: 15px;
+    font-size: 16px;
     margin: 16px auto 24px auto;
   }
   .fh5co-content-box .trainers .card,
