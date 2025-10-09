@@ -5,12 +5,36 @@ Based on Fox template
 
 /* ---------------- Body ---------------- */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
   background-color: #202220;
   color: #F1F1F1;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
 /* ---------------- Images & Backgrounds ---------------- */
@@ -122,9 +146,10 @@ footer .footer1 img {
 
 .navbar-nav a {
   font-size: 16px;
-  text-transform: uppercase;
   color: #F5E6B8;
   font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
 }
 
 .navbar .navbar-toggler {
@@ -263,7 +288,10 @@ a, a:hover {
   font-size: 30px;
   color: #F5E6B8;
   margin-top: 12px;
-  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: none;
 }
 
 .banner-lead {
