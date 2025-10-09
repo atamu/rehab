@@ -5,7 +5,7 @@ Based on Fox template
 
 /* ---------------- Body ---------------- */
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Kalam', 'Patrick Hand', cursive;
   font-weight: 400;
   overflow-x: hidden;
   background-color: #202220;
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Kalam', 'Patrick Hand', cursive;
   text-transform: none;
   letter-spacing: 0.01em;
 }
@@ -34,7 +34,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* ---------------- Images & Backgrounds ---------------- */
@@ -147,7 +147,7 @@ footer .footer1 img {
 .navbar-nav a {
   font-size: 16px;
   color: #F5E6B8;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: none;
   letter-spacing: 0.02em;
 }
@@ -226,7 +226,7 @@ footer .footer1 img {
     background: linear-gradient(135deg, rgba(255, 209, 102, 0.18), rgba(245, 230, 184, 0.08));
     border-radius: 12px;
     color: #F5E6B8;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     box-shadow: inset 0 0 0 1px rgba(255, 209, 102, 0.18), 0 10px 22px rgba(0, 0, 0, 0.25);
   }
@@ -288,8 +288,8 @@ a, a:hover {
   font-size: 30px;
   color: #F5E6B8;
   margin-top: 12px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
+  font-family: 'Kalam', 'Patrick Hand', cursive;
+  font-weight: 300;
   letter-spacing: 0.015em;
   text-transform: none;
 }
@@ -300,6 +300,7 @@ a, a:hover {
   max-width: 520px;
   line-height: 1.7em;
   color: #F1F1F1;
+  font-weight: 300;
 }
 
 .fh5co-banner-text-box a {
