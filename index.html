@@ -27,7 +27,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal" role="button">Contact</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
         </ul>
       </div>
     </div>
@@ -37,7 +37,7 @@
       <div class="quote-box pl-10 pr-10 wow bounceInRight">
         <h2> BODY REHAB <br><span>PHYSIOTHERAPY LIMITED</span> </h2>
       </div>
-      <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mt-4 wow bounceInUp" data-wow-delay=".2s" data-toggle="modal" data-target="#contactModal" role="button">Contact Us</a>
+      <a href="#contact" class="btn text-uppercase btn-outline-danger btn-lg mt-4 wow bounceInUp" data-wow-delay=".2s">Contact Us</a>
       <!-- <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp"> What’s New</a>  -->
       <!-- <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown"> Our Services</a>  -->
     </div>
@@ -146,6 +146,62 @@
   </div>
 </div>
 
+<div id="contact" class="container-fluid contact-section">
+  <div class="container py-5">
+    <div class="row align-items-start">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <h2 class="wow bounceInLeft" data-wow-delay=".15s">CONTACT US</h2>
+        <hr>
+        <p class="lead wow bounceInLeft" data-wow-delay=".2s">We would love to hear from you. Reach out to make an appointment, ask a question, or discuss how we can support your recovery.</p>
+        <ul class="list-unstyled contact-details wow bounceInLeft" data-wow-delay=".25s">
+          <li><strong>Address:</strong> 123 Physiotherapy Street, City, Country</li>
+          <li><strong>Hours:</strong> Monday – Friday, 8:00am – 6:00pm</li>
+        </ul>
+        <div class="contact-actions wow bounceInLeft" data-wow-delay=".3s">
+          <a class="btn btn-outline-light mr-3 mb-3" href="tel:+641234567">Call +64 123 4567</a>
+          <a class="btn btn-outline-light mb-3" href="mailto:info@bodyrehab.co.nz">Email Us</a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="contact-form wow bounceInRight" data-wow-delay=".2s">
+          <h5 class="text-uppercase">Send us a message</h5>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact-name">Name</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact-email">Email</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact-phone">Phone</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="Your contact number">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact-preference">Preferred contact method</label>
+                <select id="contact-preference" class="form-control">
+                  <option selected>Choose...</option>
+                  <option value="phone">Phone call</option>
+                  <option value="email">Email</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">How can we help?</label>
+              <textarea class="form-control" id="contact-message" rows="4" placeholder="Tell us about your needs"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="container-fluid">
   <div class="container py-5">
     <div class="row">
@@ -153,7 +209,7 @@
         <div class="d-flex flex-column">
           <a href="#"><img src="images/logo.png" alt="Body Rehab Physiotherapy Limited"></a>
           <p class="mt-4">Providing expert physiotherapy services for rehabilitation, recovery, and improved mobility.</p>
-          <button type="button" class="btn btn-outline-light btn-sm mt-3 align-self-start" data-toggle="modal" data-target="#contactModal">Book an Appointment</button>
+          <a class="btn btn-outline-light btn-sm mt-3 align-self-start" href="#contact">Book an Appointment</a>
         </div>
       </div>
       <div class="col-md-4 footer-links wow bounceInUp" data-wow-delay=".25s">
@@ -161,15 +217,15 @@
         <ul class="list-unstyled">
           <li><a href="#services">Our Services</a></li>
           <li><a href="#about-us">About Us</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#contactModal" role="button">Contact &amp; Referrals</a></li>
+          <li><a href="#contact">Contact &amp; Referrals</a></li>
           <li><span class="text-muted">Resources (coming soon)</span></li>
         </ul>
       </div>
       <div class="col-md-4 footer-contact wow bounceInRight" data-wow-delay=".25s">
         <h5>Contact</h5>
         <p><strong>Address:</strong> 123 Physiotherapy Street, City, Country</p>
-        <p><strong>Phone:</strong> +64 123 4567</p>
-        <p><strong>Email:</strong> info@bodyrehab.co.nz</p>
+        <p><strong>Phone:</strong> <a href="tel:+641234567">+64 123 4567</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@bodyrehab.co.nz">info@bodyrehab.co.nz</a></p>
         <div class="social-links">
           <ul class="nav">
             <li class="nav-item"><a href="#" class="btn btn-secondary mr-2 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
@@ -186,39 +242,6 @@
   </div>
 </footer>
 
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Contact Body Rehab Physiotherapy</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="contact-name">Name</label>
-            <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
-          </div>
-          <div class="form-group">
-            <label for="contact-email">Email</label>
-            <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
-          </div>
-          <div class="form-group">
-            <label for="contact-phone">Phone</label>
-            <input type="tel" class="form-control" id="contact-phone" placeholder="Your contact number">
-          </div>
-          <div class="form-group">
-            <label for="contact-message">How can we help?</label>
-            <textarea class="form-control" id="contact-message" rows="4" placeholder="Tell us about your needs"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark btn-block">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Animate.css library for animations -->
 <link rel="stylesheet" href="css/animate.min.css">
 
