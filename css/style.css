@@ -197,7 +197,7 @@ a, a:hover {
   position: absolute;
   inset: 0;
   background: url("../images/pautama.png") center center / cover no-repeat;
-  opacity: 0.05; /* barely visible */
+  opacity: 0.005; /* virtually invisible */
   pointer-events: none; /* keep clicks active */
   z-index: 0;
 }
