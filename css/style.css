@@ -189,8 +189,8 @@ a, a:hover {
   margin: 70px 0;
   background-image: url("../images/pautama.png"); /* nearly opaque overlay dims the pautama graphic */
   background-size: stretch;
-  background-position: stretch;
-  background-repeat: repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden; /* contain pseudo-element background */
 }
 
