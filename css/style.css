@@ -187,24 +187,39 @@ a, a:hover {
   position: relative;
   padding: 50px 0;
   margin: 70px 0;
-  background: url("../images/pautama.png") center center / cover no-repeat;
   background-color: #282A25;
+  overflow: hidden; /* contain pseudo-element background */
 }
 
-/* Overlay that mutes the image */
+/* Render the pautama pattern with very low opacity */
 .fh5co-content-box .trainers::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(40, 42, 37, 0.97); /* near-opaque overlay so the pautama image is almost imperceptible */
+  background: url("../images/pautama.png") center center / cover no-repeat;
+  opacity: 0.05; /* barely visible */
   pointer-events: none; /* keep clicks active */
   z-index: 0;
 }
 
-/* Ensure real content sits above overlay */
+/* Decorative borders */
+.fh5co-content-box .trainers::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+  border-top: 5px solid #404332;
+  border-bottom: 5px solid #404332;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Keep content above the faint background and borders */
 .fh5co-content-box .trainers > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -244,17 +259,6 @@ a, a:hover {
   margin: auto;
   margin-bottom: 50px;
 }
-
-.fh5co-content-box .trainers::before,
-.fh5co-content-box .trainers::after {
-  content: "";
-  position: absolute;
-  border: 5px solid #404332;
-  width: 100%;
-  top: -10px;
-}
-
-.fh5co-content-box .trainers::before { bottom: -10px; top: auto; }
 
 .fh5co-content-box .gallery .card {
   border: none;
