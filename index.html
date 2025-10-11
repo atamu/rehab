@@ -27,7 +27,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#about-us">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal" role="button">Contact</a> </li>
         </ul>
       </div>
     </div>
@@ -37,7 +37,7 @@
       <div class="quote-box pl-10 pr-10 wow bounceInRight">
         <h2> BODY REHAB <br><span>PHYSIOTHERAPY LIMITED</span> </h2>
       </div>
-      <a href="#contact" class="btn text-uppercase btn-outline-danger btn-lg mt-4 wow bounceInUp" data-wow-delay=".2s">Contact Us</a>
+      <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mt-4 wow bounceInUp" data-wow-delay=".2s" data-toggle="modal" data-target="#contactModal" role="button">Contact Us</a>
       <!-- <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp"> What’s New</a>  -->
       <!-- <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown"> Our Services</a>  -->
     </div>
@@ -147,52 +147,78 @@
 </div>
 
 <footer class="container-fluid">
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
-      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-        <div class="d-flex flex-wrap align-content-center"> 
+      <div class="col-md-4 footer-brand d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-column">
           <a href="#"><img src="images/logo.png" alt="Body Rehab Physiotherapy Limited"></a>
-          <p>Providing expert physiotherapy services for rehabilitation, recovery, and improved mobility.</p>
-          <p>� 2025 Body Rehab Physiotherapy Limited. All rights reserved.</p>
+          <p class="mt-4">Providing expert physiotherapy services for rehabilitation, recovery, and improved mobility.</p>
+          <button type="button" class="btn btn-outline-light btn-sm mt-3 align-self-start" data-toggle="modal" data-target="#contactModal">Book an Appointment</button>
         </div>
       </div>
-      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
-        <div class="form-box">
-          <h4>CONTACT US</h4>
-          <table class="table table-responsive d-table">
-            <tbody><tr>
-              <td><input type="text" class="form-control pl-0" placeholder="NAME"></td>
-              <td><input type="email" class="form-control pl-0" placeholder="EMAIL"></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS"></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MESSAGES"></td>
-            </tr>
-            <tr>
-              <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-            </tr>
-          </tbody></table>
-        </div>
+      <div class="col-md-4 footer-links wow bounceInUp" data-wow-delay=".25s">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#contactModal" role="button">Contact &amp; Referrals</a></li>
+          <li><span class="text-muted">Resources (coming soon)</span></li>
+        </ul>
       </div>
-      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-        <h5>ADDRESS</h5>
-        <p>123 Physiotherapy Street, City, Country</p>
-        <h5>PHONE</h5>
-        <p>+64 123 4567</p>
-        <h5>EMAIL</h5>
-        <p>info@bodyrehab.co.nz</p>
+      <div class="col-md-4 footer-contact wow bounceInRight" data-wow-delay=".25s">
+        <h5>Contact</h5>
+        <p><strong>Address:</strong> 123 Physiotherapy Street, City, Country</p>
+        <p><strong>Phone:</strong> +64 123 4567</p>
+        <p><strong>Email:</strong> info@bodyrehab.co.nz</p>
         <div class="social-links">
-          <ul class="nav nav-item">
-            <li><a href="#" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
-            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="btn btn-secondary mr-2 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li class="nav-item"><a href="#" class="btn btn-secondary mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
           </ul>
         </div>
       </div>
     </div>
+    <div class="row footer-bottom">
+      <div class="col-12 text-center">
+        <small>© 2025 Body Rehab Physiotherapy Limited. All rights reserved.</small>
+      </div>
+    </div>
   </div>
 </footer>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Body Rehab Physiotherapy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Phone</label>
+            <input type="tel" class="form-control" id="contact-phone" placeholder="Your contact number">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">How can we help?</label>
+            <textarea class="form-control" id="contact-message" rows="4" placeholder="Tell us about your needs"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Animate.css library for animations -->
 <link rel="stylesheet" href="css/animate.min.css">
 
@@ -206,4 +232,5 @@
 </script>
 
 
-</body></html>
+</body>
+</html>

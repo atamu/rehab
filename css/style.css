@@ -275,74 +275,84 @@ a, a:hover {
 footer {
   background: #282A25;
   color: #BCB690;
+  position: relative;
 }
 
-footer .footer1 p {
-  margin-top: 30px;
+footer .footer-brand p {
+  line-height: 1.6;
 }
 
-footer .footer2 h4 {
-  color: #BCB690;
-  text-align: center;
-  margin: 20px auto;
-}
-
-footer .footer2 .form-box {
-  background: rgba(64,67,50,0.9);
-  padding: 20px 30px;
-  margin-top: -30px;
-}
-
-footer .footer2 input[type='text'],
-footer .footer2 input[type='email'] {
-  background: transparent;
+footer .footer-brand .btn {
   border-radius: 0;
-  border: none;
-  border-bottom: 2px solid #202220;
-  color: #BCB690;
-}
-
-footer .footer2 input[type='text']:focus,
-footer .footer2 input[type='email']:focus {
-  box-shadow: none;
   border-color: #BCB690;
+  color: #BCB690;
 }
 
-footer .footer2 .btn {
-  min-width: 150px;
-  border-radius: 0;
+footer .footer-brand .btn:hover,
+footer .footer-brand .btn:focus {
   background: #BCB690;
   color: #202220;
 }
 
-footer .footer2 .btn:hover {
-  background: #404332;
+footer .footer-links h5,
+footer .footer-contact h5 {
   color: #BCB690;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-footer .footer3 {
-  padding-top: 50px;
+footer .footer-links ul {
+  margin: 0;
+  padding: 0;
 }
 
-footer .footer3 a {
+footer .footer-links ul li {
+  margin-bottom: 12px;
+}
+
+footer .footer-links a {
+  color: #BCB690;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover,
+footer .footer-links a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .footer-contact p {
+  margin-bottom: 12px;
+}
+
+footer .footer-contact strong {
+  display: inline-block;
+  min-width: 90px;
+}
+
+footer .footer-contact .btn-secondary {
   background: #BCB690;
+  border-color: #BCB690;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   padding: 0;
-  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer .footer3 a:hover {
+footer .footer-contact .btn-secondary:hover,
+footer .footer-contact .btn-secondary:focus {
   background: #404332;
+  border-color: #404332;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  border: 3px solid #404332;
-  width: 100%;
-  left: 0;
+footer .footer-bottom {
+  border-top: 1px solid #404332;
+  margin-top: 40px;
+  padding-top: 20px;
 }
 
 /* ---------------- Media Queries ---------------- */
@@ -380,8 +390,8 @@ footer::before {
   .fh5co-content-box .pr-0 img { margin: 20px auto; }
   .fh5co-content-box .col-md-5, .fh5co-content-box .col-md-7 { padding: 0 !important; }
   .gallery .card { margin-bottom: 25px; }
-  .footer1 { min-height: 150px; }
-  .footer2 .form-box { margin-top: 0 !important; }
-  
-  
+  footer .footer-brand,
+  footer .footer-links {
+    margin-bottom: 30px;
+  }
 }
