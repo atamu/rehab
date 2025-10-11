@@ -4,7 +4,7 @@ Based on Fox template
 */
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Patrick Hand', cursive;
   overflow-x: hidden; /* stop sideways scroll */
   background-color: #202220;
 }
@@ -73,7 +73,7 @@ a, a:hover {
 
 .fh5co-banner-text-box .quote-box h2 {
   display: inline-block;       /* ensures span stays inside */
-  font-family: 'Lato', sans-serif;
+  font-family: 'Patrick Hand', cursive;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2em;
