@@ -44,7 +44,7 @@
   </div>
 </div>
 
-<div id="services" class="container-fluid fh5co-network">
+<div class="container-fluid fh5co-network">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -116,7 +116,7 @@
     </div>
     <div class="row gallery">
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" id="services">
           <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
             <h4 class="card-title">REHABILITATION</h4>
             <p class="card-text">Comprehensive programs tailored to your specific injury and recovery goals.</p>
@@ -146,53 +146,86 @@
   </div>
 </div>
 
-<footer class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-        <div class="d-flex flex-wrap align-content-center"> 
-          <a href="#"><img src="images/logo.png" alt="Body Rehab Physiotherapy Limited"></a>
-          <p>Providing expert physiotherapy services for rehabilitation, recovery, and improved mobility.</p>
-          <p>� 2025 Body Rehab Physiotherapy Limited. All rights reserved.</p>
+<div id="contact" class="container-fluid contact-section">
+  <div class="container py-5">
+    <div class="row align-items-start">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+	  <a href="#"><img src="images/logo.png" alt="Body Rehab Physiotherapy Limited"></a>
+        <h2 class="wow bounceInLeft" data-wow-delay=".15s">CONTACT US</h2>
+        <hr>
+        <p class="lead wow bounceInLeft" data-wow-delay=".2s">We would love to hear from you. Reach out to make an appointment, ask a question, or discuss how we can support your recovery.</p>
+        <ul class="list-unstyled contact-details wow bounceInLeft" data-wow-delay=".25s">
+          <li><strong>Address:</strong> 123 Physiotherapy Street, City, Country</li>
+          <li><strong>Hours:</strong> Monday – Friday, 8:00am – 6:00pm</li>
+        </ul>
+        <div class="contact-actions wow bounceInLeft" data-wow-delay=".3s">
+          <a class="btn btn-outline-light mr-3 mb-3" href="tel:+641234567">Call +64 123 4567</a>
+          <a class="btn btn-outline-light mb-3" href="mailto:info@bodyrehab.co.nz">Email Us</a>
+		  	
         </div>
+		
       </div>
-      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
-        <div class="form-box">
-          <h4>CONTACT US</h4>
-          <table class="table table-responsive d-table">
-            <tbody><tr>
-              <td><input type="text" class="form-control pl-0" placeholder="NAME"></td>
-              <td><input type="email" class="form-control pl-0" placeholder="EMAIL"></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS"></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MESSAGES"></td>
-            </tr>
-            <tr>
-              <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
-            </tr>
-          </tbody></table>
-        </div>
-      </div>
-      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-        <h5>ADDRESS</h5>
-        <p>123 Physiotherapy Street, City, Country</p>
-        <h5>PHONE</h5>
-        <p>+64 123 4567</p>
-        <h5>EMAIL</h5>
-        <p>info@bodyrehab.co.nz</p>
-        <div class="social-links">
-          <ul class="nav nav-item">
-            <li><a href="#" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
-            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook"></a></li>
-          </ul>
+      <div class="col-lg-7">
+        <div class="contact-form wow bounceInRight" data-wow-delay=".2s">
+          <h5 class="text-uppercase">Send us a message</h5>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact-name">Name</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact-email">Email</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact-phone">Phone</label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="Your contact number">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact-preference">Preferred contact method</label>
+                <select id="contact-preference" class="form-control">
+                  <option selected>Choose...</option>
+                  <option value="phone">Phone call</option>
+                  <option value="email">Email</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">How can we help?</label>
+              <textarea class="form-control" id="contact-message" rows="4" placeholder="Tell us about your needs"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<footer class="container-fluid">
+  <div class="container py-5">
+    <!-- <div class="row"> -->
+      <!-- <div class="col-md-4 footer-brand d-flex wow bounceInLeft" data-wow-delay=".25s"> -->
+        <!-- <div class="d-flex flex-column"> -->
+          <!-- <a href="#"><img src="images/logo.png" alt="Body Rehab Physiotherapy Limited"></a> -->
+          <!-- <p class="mt-4">Providing expert physiotherapy services for rehabilitation, recovery, and improved mobility.</p> -->
+          <!-- <a class="btn btn-outline-light btn-sm mt-3 align-self-start" href="#contact">Book an Appointment</a> -->
+        <!-- </div> -->
+      <!-- </div> -->
+
+      <!-- </div> -->
+    </div>
+    <div class="row footer-bottom">
+      <div class="col-12 text-center">
+        <small>© 2025 Body Rehab Physiotherapy Limited. All rights reserved.</small>
+      </div>
+    </div>
+  </div>
 </footer>
+
 <!-- Animate.css library for animations -->
 <link rel="stylesheet" href="css/animate.min.css">
 
@@ -206,4 +239,5 @@
 </script>
 
 
-</body></html>
+</body>
+</html>

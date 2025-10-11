@@ -271,78 +271,172 @@ a, a:hover {
   color: #202220;
 }
 
-/* ---------------- Footer ---------------- */
-footer {
+/* ---------------- Contact Section ---------------- */
+.contact-section {
   background: #282A25;
   color: #BCB690;
 }
 
-footer .footer1 p {
-  margin-top: 30px;
+.contact-section h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-footer .footer2 h4 {
+.contact-section hr {
+  border-color: #494B37;
+  border-width: 4px;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  max-width: 80px;
+}
+
+.contact-section .lead {
   color: #BCB690;
-  text-align: center;
-  margin: 20px auto;
 }
 
-footer .footer2 .form-box {
-  background: rgba(64,67,50,0.9);
-  padding: 20px 30px;
-  margin-top: -30px;
+.contact-section .contact-details li {
+  margin-bottom: 12px;
 }
 
-footer .footer2 input[type='text'],
-footer .footer2 input[type='email'] {
-  background: transparent;
+.contact-section .contact-details strong {
+  display: inline-block;
+  min-width: 85px;
+}
+
+.contact-section .contact-actions .btn {
   border-radius: 0;
-  border: none;
-  border-bottom: 2px solid #202220;
-  color: #BCB690;
-}
-
-footer .footer2 input[type='text']:focus,
-footer .footer2 input[type='email']:focus {
-  box-shadow: none;
   border-color: #BCB690;
+  color: #BCB690;
+  transition: all 0.2s ease-in-out;
 }
 
-footer .footer2 .btn {
-  min-width: 150px;
+.contact-section .contact-actions .btn:hover,
+.contact-section .contact-actions .btn:focus {
+  background: #BCB690;
+  color: #202220;
+  text-decoration: none;
+}
+
+.contact-section .contact-form {
+  background: rgba(32, 34, 32, 0.85);
+  border: 1px solid #494B37;
+  border-radius: 12px;
+  padding: 35px;
+  color: #BCB690;
+}
+
+.contact-section .contact-form h5 {
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.contact-section .form-control,
+.contact-section .form-control:focus,
+.contact-section .form-control:hover {
+  background: #202220;
+  border-color: #494B37;
+  color: #BCB690;
+}
+
+.contact-section .form-control::placeholder {
+  color: rgba(188, 182, 144, 0.6);
+}
+
+.contact-section .btn-dark {
   border-radius: 0;
+  background: #494B37;
+  border-color: #494B37;
+}
+
+.contact-section .btn-dark:hover,
+.contact-section .btn-dark:focus {
+  background: #BCB690;
+  border-color: #BCB690;
+  color: #202220;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background: #282A25;
+  color: #BCB690;
+  position: relative;
+}
+
+footer .footer-brand p {
+  line-height: 1.6;
+}
+
+footer .footer-brand .btn {
+  border-radius: 0;
+  border-color: #BCB690;
+  color: #BCB690;
+}
+
+footer .footer-brand .btn:hover,
+footer .footer-brand .btn:focus {
   background: #BCB690;
   color: #202220;
 }
 
-footer .footer2 .btn:hover {
-  background: #404332;
+footer .footer-links h5,
+footer .footer-contact h5 {
   color: #BCB690;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-footer .footer3 {
-  padding-top: 50px;
+footer .footer-links ul {
+  margin: 0;
+  padding: 0;
 }
 
-footer .footer3 a {
+footer .footer-links ul li {
+  margin-bottom: 12px;
+}
+
+footer .footer-links a {
+  color: #BCB690;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover,
+footer .footer-links a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .footer-contact p {
+  margin-bottom: 12px;
+}
+
+footer .footer-contact strong {
+  display: inline-block;
+  min-width: 90px;
+}
+
+footer .footer-contact .btn-secondary {
   background: #BCB690;
+  border-color: #BCB690;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   padding: 0;
-  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer .footer3 a:hover {
+footer .footer-contact .btn-secondary:hover,
+footer .footer-contact .btn-secondary:focus {
   background: #404332;
+  border-color: #404332;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  border: 3px solid #404332;
-  width: 100%;
-  left: 0;
+footer .footer-bottom {
+  border-top: 1px solid #404332;
+  margin-top: 40px;
+  padding-top: 20px;
 }
 
 /* ---------------- Media Queries ---------------- */
@@ -380,8 +474,12 @@ footer::before {
   .fh5co-content-box .pr-0 img { margin: 20px auto; }
   .fh5co-content-box .col-md-5, .fh5co-content-box .col-md-7 { padding: 0 !important; }
   .gallery .card { margin-bottom: 25px; }
-  .footer1 { min-height: 150px; }
-  .footer2 .form-box { margin-top: 0 !important; }
-  
-  
+  footer .footer-brand,
+  footer .footer-links {
+    margin-bottom: 30px;
+  }
+
+  .contact-section .contact-actions .btn {
+    width: 100%;
+  }
 }
