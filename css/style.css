@@ -249,7 +249,14 @@ a, a:hover {
   margin-bottom: 50px;
 }
 
+.fh5co-content-box .gallery .col-md-4 {
+  display: flex;
+}
+
 .fh5co-content-box .gallery .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   border: none;
   background: transparent;
 }
@@ -257,10 +264,18 @@ a, a:hover {
 .fh5co-content-box .gallery .card .card-body {
   background: rgba(188,182,144,0.85);
   color: #202220;
+  flex-grow: 1;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
 }
 
 .fh5co-content-box .gallery .card .card-body h4 {
   color: #202220;
+}
+
+.fh5co-content-box .gallery .card-img-top {
+  height: 260px;
+  object-fit: cover;
 }
 
 /* ---------------- Footer ---------------- */
