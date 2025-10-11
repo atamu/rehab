@@ -1,25 +1,24 @@
-;(function ($) {
-  'use strict';
+;(function () {
 
-  // Enable smooth scrolling for in-page navigation buttons and links.
-  $(document).on('click', 'a[href^="#"]', function (event) {
-    var anchor = $(this).attr('href');
+    'use strict';
 
-    if (!anchor || anchor.length < 2) {
-      return;
+    var wowAnimation = function() {
+        var wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset:       150,
+                callback:     function(box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
     }
 
-    var $target = $(anchor);
 
-    if ($target.length) {
-      event.preventDefault();
+    (function($) {
+        wowAnimation();
+    })(jQuery);
 
-      $('html, body').animate({
-        scrollTop: $target.offset().top - 72
-      }, 600);
 
-      // Close the mobile navigation after selecting a link.
-      $('.navbar-collapse.show').collapse('hide');
-    }
-  });
-})(jQuery);
+}());
