@@ -188,18 +188,11 @@ a, a:hover {
   padding: 50px 0;
   margin: 70px 0;
   background-color: #282A25;
+  background-image: linear-gradient(rgba(40, 42, 37, 0.99), rgba(40, 42, 37, 0.99)), url("../images/pautama.png"); /* nearly opaque overlay dims the pautama graphic */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden; /* contain pseudo-element background */
-}
-
-/* Render the pautama pattern with very low opacity */
-.fh5co-content-box .trainers::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../images/pautama.png") center center / cover no-repeat;
-  opacity: 0.005; /* virtually invisible */
-  pointer-events: none; /* keep clicks active */
-  z-index: 0;
 }
 
 /* Decorative borders */
@@ -216,13 +209,10 @@ a, a:hover {
   z-index: 1;
 }
 
-/* Keep content above the faint background and borders */
 .fh5co-content-box .trainers > * {
   position: relative;
   z-index: 2;
 }
-
-
 
 .fh5co-content-box .trainers .bg-50 {
   background: rgba(32,34,32,0.5);
