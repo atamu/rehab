@@ -196,7 +196,7 @@ a, a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(40, 42, 37, 0.1); /* darker overlay = fainter image */
+  background-color: rgba(40, 42, 37, 0.97); /* near-opaque overlay so the pautama image is almost imperceptible */
   pointer-events: none; /* keep clicks active */
   z-index: 0;
 }
