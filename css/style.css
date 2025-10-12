@@ -252,19 +252,19 @@ a, a:hover {
   margin-left: -15px;
 }
 
-.fh5co-content-box .trainers .quote-box2 {
+.fh5co-content-box .trainers .team-heading {
   color: #BCB690;
-  max-width: 250px;
-  position: relative;
-  text-align: center;
-  margin: 40px auto 70px auto;
-  padding: 30px 0;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 40px 0 20px;
 }
 
-.fh5co-content-box .trainers .quote-box2 h2 {
-  margin: 0;
-  padding: 15px 30px;
-  display: inline-block;
+.fh5co-content-box .trainers hr {
+  border-color: #404332;
+  border-width: 5px;
+  max-width: 100px;
+  margin: 0 0 40px;
+  border-radius: 5px;
 }
 
 .fh5co-content-box .gallery .card {
