@@ -225,10 +225,6 @@ a, a:hover {
   z-index: 2;
 }
 
-.fh5co-content-box .trainers .bg-50 {
-  background: rgba(32,34,32,0.5);
-}
-
 .fh5co-content-box .trainers .card {
   border: none;
   background: transparent;
@@ -252,13 +248,20 @@ a, a:hover {
   margin-left: -15px;
 }
 
-.fh5co-content-box .trainers .quote-box2 {
+.fh5co-content-box .trainers .team-heading {
   color: #BCB690;
-  max-width: 250px;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 40px 0 20px;
+}
+
+.fh5co-content-box .trainers .team-divider {
+  border-color: #404332;
+  border-width: 5px;
+  max-width: 100px;
+  margin: 15px 0 40px;
+  border-radius: 5px;
+  margin-left: 0;
 }
 
 .fh5co-content-box .gallery .card {
