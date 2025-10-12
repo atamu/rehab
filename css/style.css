@@ -261,17 +261,17 @@ a, a:hover {
   margin-bottom: 50px;
 }
 
-.fh5co-content-box .gallery .card {
+.gallery .card {
   border: none;
   background: transparent;
 }
 
-.fh5co-content-box .gallery .card .card-body {
-  background: rgba(188,182,144,0.85);
+.gallery .card .card-body {
+  background: rgba(188, 182, 144, 0.85);
   color: #202220;
 }
 
-.fh5co-content-box .gallery .card .card-body h4 {
+.gallery .card .card-body h4 {
   color: #202220;
 }
 
