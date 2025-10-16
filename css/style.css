@@ -23,6 +23,11 @@ body {
   color: var(--color-text-primary);
 }
 
+.animate-soft {
+  animation-duration: 1.6s !important;
+  animation-timing-function: ease-out !important;
+}
+
 h1,
 h2,
 h3,
