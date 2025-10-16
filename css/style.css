@@ -86,8 +86,37 @@ a, a:hover {
 .fh5co-banner-text-box .quote-box h2 span {
   display: block;              /* puts span on new line */
   font-size: 42px;
-  color: #404332;
+  color: #BCB690;
+  letter-spacing: 1px;
   margin-top: 5px;
+}
+
+.hero-title__secondary {
+  font-size: 38px;
+}
+
+.hero-contact-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 0;
+  background: #494B37;
+  border: 1px solid #494B37;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-contact-btn:hover,
+.hero-contact-btn:focus,
+.hero-contact-btn:active {
+  background: #BCB690;
+  border-color: #BCB690;
+  color: #202220;
+  text-decoration: none;
+}
+
+.hero-contact-btn:active {
+  box-shadow: none;
 }
 
 .fh5co-banner-text-box .quote-box::before,
