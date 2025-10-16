@@ -61,9 +61,11 @@ body .bg-img {
 .hero-banner-container {
   min-height: 70vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 15px 60px;
+  text-align: center;
 }
 
 body nav {
@@ -108,12 +110,13 @@ a, a:hover {
 /* ---------------- Banner ---------------- */
 .fh5co-banner-text-box {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 640px;
   margin: 0 auto;
   padding: 30px 40px;
   background: var(--color-overlay); /* semi-transparent dark overlay */
   border-radius: 10px;
-  max-width: 90%; /* responsive width */
   text-align: center;
 }
 
