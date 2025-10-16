@@ -289,6 +289,29 @@ padding: 30px 0 350px 0;
   border-color: var(--color-accent-strong);
 }
 
+@media (max-width: 1199.98px) {
+  .fh5co-about-us {
+    padding-bottom: 220px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fh5co-about-us {
+    padding: 40px 0 140px;
+  }
+
+  .fh5co-about-us .about-quote {
+    max-width: 640px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .fh5co-about-us {
+    padding-bottom: 110px;
+  }
+}
+
 /* ---------------- Content Boxes ---------------- */
 .fh5co-content-box {
   background: var(--color-surface-alt);
