@@ -9,6 +9,7 @@ Based on Fox template
   --color-surface-alt: #3a3d30;
   --color-overlay: rgba(32, 34, 32, 0.52);
   --color-overlay-soft: rgba(32, 34, 32, 0.12);
+  --color-overlay-strong: rgba(32, 34, 32, 0.85);
   --color-accent: #c7c199;
   --color-accent-strong: #e1dbb3;
   --color-text-primary: #f2edd2;
@@ -244,8 +245,7 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-about-us .about-quote {
-  background: var(--color-overlay);
-  border-left: 6px solid var(--color-accent);
+  background: var(--color-overlay-strong);
   border-radius: 14px;
   padding: 28px 32px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
