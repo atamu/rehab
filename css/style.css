@@ -66,8 +66,12 @@ body nav {
 }
 
 body .brand-logo {
-  height: 64px;
+  height: 112px;
   width: auto;
+}
+
+body nav .brand-logo {
+  height: 80px;
 }
 
 body nav .navbar-nav a {
