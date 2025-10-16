@@ -334,6 +334,12 @@ padding: 30px 0 350px 0;
   }
 }
 
+@media (min-width: 992px) {
+  .service-highlight-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 575.98px) {
   .services-intro {
     padding: 26px 22px;
@@ -649,6 +655,14 @@ padding: 30px 0 350px 0;
 
 .gallery .card .card-text {
   margin-bottom: 0;
+}
+
+.services-intro,
+.service-highlight-list li,
+.gallery .card,
+.gallery .card img,
+.gallery .card .card-body {
+  border-radius: 0;
 }
 
 /* ---------------- Contact Section ---------------- */
