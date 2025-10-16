@@ -23,6 +23,11 @@ body {
   color: var(--color-text-primary);
 }
 
+.animate-soft {
+  animation-duration: 1.6s !important;
+  animation-timing-function: ease-out !important;
+}
+
 h1,
 h2,
 h3,
@@ -313,6 +318,10 @@ padding: 30px 0 350px 0;
   z-index: 2;
   backdrop-filter: blur(2px);
   margin-top: 25px;
+}
+
+.fh5co-about-us .about-quote h2 {
+  margin-top: 0;
 }
 
 .fh5co-about-us .about-quote p {
