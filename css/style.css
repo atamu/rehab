@@ -107,11 +107,16 @@ a, a:hover {
 }
 
 .hero-contact-btn:hover,
-.hero-contact-btn:focus {
+.hero-contact-btn:focus,
+.hero-contact-btn:active {
   background: #BCB690;
   border-color: #BCB690;
   color: #202220;
   text-decoration: none;
+}
+
+.hero-contact-btn:active {
+  box-shadow: none;
 }
 
 .fh5co-banner-text-box .quote-box::before,
