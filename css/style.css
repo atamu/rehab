@@ -3,10 +3,40 @@ Theme Name: Body Rehab Physiotherapy Limited
 Based on Fox template
 */
 
+:root {
+  --color-background: #202220;
+  --color-surface: #2b2d29;
+  --color-surface-alt: #404332;
+  --color-overlay: rgba(32, 34, 32, 0.6);
+  --color-overlay-soft: rgba(32, 34, 32, 0.5);
+  --color-accent: #bcb690;
+  --color-accent-strong: #d9d3aa;
+  --color-text-primary: #ece7cc;
+  --color-text-inverse: #202220;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden; /* stop sideways scroll */
-  background-color: #202220;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+p,
+li {
+  color: var(--color-text-primary);
+  line-height: 1.7;
 }
 
 
@@ -25,33 +55,33 @@ body .bg-img {
 }
 
 body nav {
-  background: rgba(64, 67, 50, 0.8); /* semi-transparent dark */
+  background: rgba(43, 45, 41, 0.9); /* semi-transparent dark */
 }
 
 body nav .navbar-nav a {
   font-size: 16px;
   text-transform: uppercase;
-  color: #BCB690 !important;
+  color: var(--color-accent) !important;
   transition: all 0.3s;
 }
 
 body nav .navbar-nav a:hover {
-  color: #494B37 !important;
+  color: var(--color-text-primary) !important;
 }
 
 body nav .navbar-nav .btn-danger {
-  background: #BCB690;
-  border-color: #BCB690;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
   border-radius: 0;
 }
 
 body nav .navbar-nav .btn-danger:hover {
-  background: #494B37;
-  border-color: #494B37;
+  background: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
 }
 
 a, a:hover {
-  color: #BCB690;
+  color: var(--color-accent);
 }
 
 /* ---------------- Banner ---------------- */
@@ -60,7 +90,7 @@ a, a:hover {
   display: inline-block;
   margin: 0 auto;
   padding: 30px 40px;
-  background: rgba(32, 34, 32, 0.6); /* semi-transparent dark overlay */
+  background: var(--color-overlay); /* semi-transparent dark overlay */
   border-radius: 10px;
   max-width: 90%; /* responsive width */
   text-align: center;
@@ -78,7 +108,7 @@ a, a:hover {
   font-size: 48px;
   line-height: 1.2em;
   margin: 0;
-  color: #BCB690;
+  color: var(--color-accent);
   text-align: center;
   white-space: normal;         /* allows wrapping */
 }
@@ -86,7 +116,7 @@ a, a:hover {
 .fh5co-banner-text-box .quote-box h2 span {
   display: block;              /* puts span on new line */
   font-size: 42px;
-  color: #BCB690;
+  color: var(--color-accent);
   letter-spacing: 1px;
   margin-top: 5px;
 }
@@ -99,25 +129,25 @@ a, a:hover {
   display: inline-block;
   padding: 14px 36px;
   border-radius: 0;
-  background: #494B37;
-  border: 1px solid #494B37;
-  color: #FFFFFF;
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  color: var(--color-text-inverse);
   font-weight: 700;
   transition: all 0.2s ease-in-out;
 }
 
 .hero-contact-btn:hover,
 .hero-contact-btn:focus {
-  background: #D9D3AA;
-  border-color: #D9D3AA;
-  color: #202220;
+  background: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
+  color: var(--color-text-inverse);
   text-decoration: none;
 }
 
 .hero-contact-btn:active {
-  background: #C4BE8F;
-  border-color: #C4BE8F;
-  color: #202220;
+  background: #c4be8f;
+  border-color: #c4be8f;
+  color: var(--color-text-inverse);
   box-shadow: none;
   text-decoration: none;
 }
@@ -128,16 +158,16 @@ a, a:hover {
 }
 
 .fh5co-banner-text-box a:not(.hero-contact-btn) {
-  color: #BCB690;
-  border-color: #494B37;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
   border-radius: 0;
   min-width: 150px;
 }
 
 .fh5co-banner-text-box a:not(.hero-contact-btn):hover {
   background: transparent;
-  border-color: #282A25;
-  color: #404332;
+  border-color: var(--color-accent-strong);
+  color: var(--color-text-primary);
 }
 
 /* ---------------- Sections ---------------- */
@@ -146,7 +176,8 @@ a, a:hover {
   background-position: center;
   background-size: cover;
   position: relative;
-	
+  background-color: var(--color-surface);
+
 }
 .fh5co-network{
 padding: 30px 0 50px 0;
@@ -160,12 +191,12 @@ padding: 30px 0 350px 0;
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(32,34,32,0.5);
+  background: var(--color-overlay-soft);
   z-index: 1;
 }
 
 .fh5co-network h2, .fh5co-about-us h2 {
-  color: #BCB690;
+  color: var(--color-accent);
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 0;
@@ -176,14 +207,14 @@ padding: 30px 0 350px 0;
 .fh5co-network h4, .fh5co-about-us h4,
 .fh5co-network h5, .fh5co-about-us h5,
 .fh5co-network p, .fh5co-about-us p {
-  color: #BCB690;
-  font-weight: 700;
+  color: var(--color-text-primary);
+  font-weight: 400;
   position: relative;
   z-index: 2;
 }
 
 .fh5co-network hr, .fh5co-about-us hr {
-  border-color: #404332;
+  border-color: var(--color-accent);
   border-width: 5px;
   max-width: 100px;
   margin-left: 0;
@@ -203,23 +234,23 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-about-us p {
-  color: #BCB690;
+  color: var(--color-text-primary);
 }
 
 .fh5co-about-us a {
-  color: #BCB690 !important;
-  border-color: #494B37;
+  color: var(--color-accent) !important;
+  border-color: var(--color-accent);
   border-radius: 0;
 }
 
 .fh5co-about-us a:hover {
-  color: #404332;
-  border-color: #282A25;
+  color: var(--color-text-inverse);
+  border-color: var(--color-accent-strong);
 }
 
 /* ---------------- Content Boxes ---------------- */
 .fh5co-content-box {
-  background: #404332;
+  background: var(--color-surface-alt);
   padding-bottom: 100px;
 }
 
@@ -227,11 +258,11 @@ padding: 30px 0 350px 0;
 .fh5co-content-box p,
 .fh5co-content-box .lead,
 .fh5co-content-box ul li {
-  color: #BCB690;
+  color: var(--color-text-primary);
 }
 
 .fh5co-content-box hr {
-  border-color: #282A25;
+  border-color: var(--color-accent);
   border-width: 4px;
   border-radius: 5px;
   max-width: 100px;
@@ -239,13 +270,13 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-content-box .table {
-  color: #BCB690;
-  border-color: #494B37;
+  color: var(--color-text-primary);
+  border-color: var(--color-accent);
 }
 
 .fh5co-content-box .table td,
 .fh5co-content-box .table th {
-  border-top-color: #494B37;
+  border-top-color: var(--color-surface);
 }
 
 .fh5co-content-box .table-striped tbody tr:nth-of-type(odd) {
@@ -253,12 +284,12 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-content-box .table-striped tbody tr:nth-of-type(even) {
-  background-color: rgba(73, 75, 55, 0.2);
+  background-color: rgba(73, 75, 55, 0.25);
 }
 
 .fh5co-network ul,
 .fh5co-network ul li {
-  color: #BCB690;
+  color: var(--color-text-primary);
 }
 
 .fh5co-content-box img {
@@ -266,7 +297,7 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-content-box .card-img-overlay {
-  color: #BCB690;
+  color: var(--color-text-primary);
   text-align: center;
   top: 35%;
 }
@@ -288,8 +319,8 @@ padding: 30px 0 350px 0;
   right: 0;
   top: -10px;
   bottom: -10px;
-  border-top: 5px solid #404332;
-  border-bottom: 5px solid #404332;
+  border-top: 5px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.08);
   pointer-events: none;
   z-index: 1;
 }
@@ -305,11 +336,11 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-content-box .trainers .card .card-body {
-  background: rgba(73, 75, 55, 0.9);
+  background: rgba(73, 75, 55, 0.85);
   border-radius: 15px;
   padding: 30px 20px 50px 20px;
   margin-top: 30px;
-  color: #BCB690;
+  color: var(--color-text-primary);
   position: relative;
 }
 
@@ -323,14 +354,14 @@ padding: 30px 0 350px 0;
 }
 
 .fh5co-content-box .trainers .team-heading {
-  color: #BCB690;
+  color: var(--color-accent);
   font-weight: 700;
   font-size: 40px;
   margin: 40px 0 20px;
 }
 
 .fh5co-content-box .trainers .team-divider {
-  border-color: #404332;
+  border-color: var(--color-accent);
   border-width: 5px;
   max-width: 100px;
   margin: 15px 0 40px;
@@ -344,18 +375,18 @@ padding: 30px 0 350px 0;
 }
 
 .gallery .card .card-body {
-  background: rgba(188, 182, 144, 0.85);
-  color: #202220;
+  background: rgba(188, 182, 144, 0.9);
+  color: var(--color-text-inverse);
 }
 
 .gallery .card .card-body h4 {
-  color: #202220;
+  color: var(--color-text-inverse);
 }
 
 /* ---------------- Contact Section ---------------- */
 .contact-section {
-  background: #282A25;
-  color: #BCB690;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 .contact-section h2 {
@@ -364,7 +395,7 @@ padding: 30px 0 350px 0;
 }
 
 .contact-section hr {
-  border-color: #494B37;
+  border-color: var(--color-accent);
   border-width: 4px;
   border-radius: 5px;
   margin: 20px 0 30px;
@@ -372,7 +403,7 @@ padding: 30px 0 350px 0;
 }
 
 .contact-section .lead {
-  color: #BCB690;
+  color: var(--color-text-primary);
 }
 
 .contact-section .contact-details li {
@@ -386,24 +417,24 @@ padding: 30px 0 350px 0;
 
 .contact-section .contact-actions .btn {
   border-radius: 0;
-  border-color: #BCB690;
-  color: #BCB690;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
   transition: all 0.2s ease-in-out;
 }
 
 .contact-section .contact-actions .btn:hover,
 .contact-section .contact-actions .btn:focus {
-  background: #BCB690;
-  color: #202220;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
   text-decoration: none;
 }
 
 .contact-section .contact-form {
   background: rgba(32, 34, 32, 0.85);
-  border: 1px solid #494B37;
+  border: 1px solid var(--color-accent);
   border-radius: 12px;
   padding: 35px;
-  color: #BCB690;
+  color: var(--color-text-primary);
 }
 
 .contact-section .contact-form h5 {
@@ -414,9 +445,9 @@ padding: 30px 0 350px 0;
 .contact-section .form-control,
 .contact-section .form-control:focus,
 .contact-section .form-control:hover {
-  background: #202220;
-  border-color: #494B37;
-  color: #BCB690;
+  background: var(--color-background);
+  border-color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 .contact-section .form-control::placeholder {
@@ -425,29 +456,29 @@ padding: 30px 0 350px 0;
 
 .contact-section .btn-dark {
   border-radius: 0;
-  background: #494B37;
-  border-color: #494B37;
-  color: #BCB690;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text-inverse);
   transition: all 0.2s ease-in-out;
 }
 
 .contact-section .btn-dark:hover,
 .contact-section .btn-dark:focus {
-  background: #D9D3AA;
-  border-color: #D9D3AA;
-  color: #202220;
+  background: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
+  color: var(--color-text-inverse);
 }
 
 .contact-section .btn-dark:active {
-  background: #C4BE8F;
-  border-color: #C4BE8F;
-  color: #202220;
+  background: #c4be8f;
+  border-color: #c4be8f;
+  color: var(--color-text-inverse);
 }
 
 /* ---------------- Footer ---------------- */
 footer {
-  background: #282A25;
-  color: #BCB690;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
   position: relative;
 }
 
@@ -457,19 +488,19 @@ footer .footer-brand p {
 
 footer .footer-brand .btn {
   border-radius: 0;
-  border-color: #BCB690;
-  color: #BCB690;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 footer .footer-brand .btn:hover,
 footer .footer-brand .btn:focus {
-  background: #BCB690;
-  color: #202220;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
 }
 
 footer .footer-links h5,
 footer .footer-contact h5 {
-  color: #BCB690;
+  color: var(--color-accent);
   letter-spacing: 1px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -485,13 +516,13 @@ footer .footer-links ul li {
 }
 
 footer .footer-links a {
-  color: #BCB690;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
 footer .footer-links a:hover,
 footer .footer-links a:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -505,8 +536,8 @@ footer .footer-contact strong {
 }
 
 footer .footer-contact .btn-secondary {
-  background: #BCB690;
-  border-color: #BCB690;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -518,12 +549,12 @@ footer .footer-contact .btn-secondary {
 
 footer .footer-contact .btn-secondary:hover,
 footer .footer-contact .btn-secondary:focus {
-  background: #404332;
-  border-color: #404332;
+  background: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
 }
 
 footer .footer-bottom {
-  border-top: 1px solid #404332;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: 40px;
   padding-top: 20px;
 }
