@@ -593,6 +593,11 @@ padding: 30px 0 350px 0;
 
 .contact-section .contact-logo {
   line-height: 0;
+  text-align: left;
+}
+
+.contact-section .contact-logo .brand-logo {
+  height: 136px;
 }
 
 .contact-section .contact-actions {
