@@ -264,16 +264,6 @@ padding: 30px 0 350px 0;
   margin-top: 25px;
 }
 
-.fh5co-about-us .about-quote::before {
-  content: "\201C";
-  position: absolute;
-  top: -28px;
-  left: 22px;
-  font-size: 64px;
-  color: rgba(193, 186, 140, 0.3);
-  line-height: 1;
-}
-
 .fh5co-about-us .about-quote p {
   margin-bottom: 0;
 }
