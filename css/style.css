@@ -107,16 +107,19 @@ a, a:hover {
 }
 
 .hero-contact-btn:hover,
-.hero-contact-btn:focus,
-.hero-contact-btn:active {
-  background: #BCB690;
-  border-color: #BCB690;
+.hero-contact-btn:focus {
+  background: #D9D3AA;
+  border-color: #D9D3AA;
   color: #202220;
   text-decoration: none;
 }
 
 .hero-contact-btn:active {
+  background: #C4BE8F;
+  border-color: #C4BE8F;
+  color: #202220;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .fh5co-banner-text-box .quote-box::before,
@@ -124,14 +127,14 @@ a, a:hover {
   display: none; /* hide original quote decorations */
 }
 
-.fh5co-banner-text-box a {
+.fh5co-banner-text-box a:not(.hero-contact-btn) {
   color: #BCB690;
   border-color: #494B37;
   border-radius: 0;
   min-width: 150px;
 }
 
-.fh5co-banner-text-box a:hover {
+.fh5co-banner-text-box a:not(.hero-contact-btn):hover {
   background: transparent;
   border-color: #282A25;
   color: #404332;
@@ -386,12 +389,20 @@ padding: 30px 0 350px 0;
   border-radius: 0;
   background: #494B37;
   border-color: #494B37;
+  color: #BCB690;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact-section .btn-dark:hover,
 .contact-section .btn-dark:focus {
-  background: #BCB690;
-  border-color: #BCB690;
+  background: #D9D3AA;
+  border-color: #D9D3AA;
+  color: #202220;
+}
+
+.contact-section .btn-dark:active {
+  background: #C4BE8F;
+  border-color: #C4BE8F;
   color: #202220;
 }
 
